@@ -10,16 +10,16 @@ const OrderRoutes = require('./api/routes/orders');
 const UserRoutes = require('./api/routes/users');
 // 
 
-mongoose.connect('mongodb+srv://vercel-admin-user:9vzCoVNaDevksdW2@cluster0.bqtzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true
-});
-// mongoose.connect('mongodb+srv://Nodeapi:'+ process.env.MONGO_ATLAS_PWD +'@cluster0.bqtzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+// mongoose.connect('mongodb+srv://vercel-admin-user:9vzCoVNaDevksdW2@cluster0.bqtzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
 //     useNewUrlParser: true,
 //     useCreateIndex: true,
 //     useUnifiedTopology: true
 // });
+mongoose.connect('mongodb+srv://Nodeapi:'+ process.env.MONGO_ATLAS_PWD +'@cluster0.bqtzq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+});
 
 app.use(morgan('dev'));
 app.use('/uploads',express.static('uploads'));
