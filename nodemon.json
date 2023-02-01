@@ -1,0 +1,8 @@
+{
+    "env" : {
+        "MONGO_ATLAS_PWD": "Nodeapi",
+        "JWT_KEY": "MEAN",
+        "email":"tester@codexnow.com",
+        "password":"!@#$%^&*())(*&^%$#@!qW"
+    }
+}
